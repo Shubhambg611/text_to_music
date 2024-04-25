@@ -73,7 +73,7 @@ def main():
         st.write("Music Generator app built using Meta's Audiocraft library. We are using Music Gen Small model.")
 
     text_area = st.text_area("Enter your description.......")
-    time_slider = st.slider("Select time duration (In Seconds)", 0, 20, 10)
+    time_slider = st.slider("Select time duration (In Seconds)", 0, 60, 30)
 
     if text_area and time_slider:
         st.json({
